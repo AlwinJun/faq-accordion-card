@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.card {
+  width: 90%;
+  background-color: var(--blue-200);
+
+  &-img__desktop {
+    display: none;
+  }
+}
