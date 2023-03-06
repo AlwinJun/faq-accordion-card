@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+$fs-xs: rem(12); // can't use scss fucntion or variables in :root
+
+:root {
+  --ff-primary: 'Kumbh Sans', sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --gradient-top: hsl(273, 75%, 66%);
+  --gradient-bottom: hsl(240, 73%, 65%);
+
+  --blue-100: hsl(240, 5%, 91%);
+  --blue-200: hsl(240, 6%, 50%);
+  --blue-400: hsl(237, 12%, 33%);
+  --blue-900: hsl(238, 29%, 16%);
+  --clr-accent: hsl(14, 88%, 65%);
+}

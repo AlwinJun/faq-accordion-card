@@ -1,0 +1,12 @@
+@use 'root' as *;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-top),
+    var(--gradient-bottom)
+  );
+}

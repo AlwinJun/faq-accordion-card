@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+@use 'root' as *;
+
+body {
+  font-family: var(--ff-primary);
+  font-size: $fs-xs;
+  font-weight: var(--fw-400);
+  color: var(--blue-400);
+}
