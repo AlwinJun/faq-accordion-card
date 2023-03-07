@@ -2,10 +2,33 @@
 @use '../base/' as *;
 
 .card {
+  position: relative;
   width: 90%;
-  background-color: var(--blue-200);
+  max-width: em(450);
+  background-color: #fff;
 
-  &-img__desktop {
-    display: none;
+  background-image: url('../images/bg-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: rem(240);
+  background-position: center rem(-5);
+
+  &-img {
+    margin-bottom: 10rem;
+
+    &__mobile img {
+      position: absolute;
+      top: rem(-85);
+      left: 50%;
+      transform: translateX(-50%);
+      width: rem(190);
+      @media (min-width: em(300)) {
+        top: rem(-105);
+        width: rem(230);
+      }
+    }
+
+    &__desktop {
+      display: none;
+    }
   }
 }
