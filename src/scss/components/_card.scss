@@ -6,14 +6,14 @@
   width: 90%;
   max-width: em(450);
   background-color: #fff;
-
   background-image: url('../images/bg-pattern-mobile.svg');
   background-repeat: no-repeat;
   background-size: rem(240);
   background-position: center rem(-5);
+  border-radius: rem(20);
 
   &-img {
-    margin-bottom: 10rem;
+    margin-bottom: rem(130);
 
     &__mobile img {
       position: absolute;
@@ -29,6 +29,15 @@
 
     &__desktop {
       display: none;
+    }
+  }
+
+  &-body {
+    padding-inline: rem(20);
+    padding-bottom: rem(40);
+
+    & h1 {
+      text-align: center;
     }
   }
 }
