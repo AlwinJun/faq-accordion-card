@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.accordion {
+  &__item {
+    border-bottom: 2px solid var(--blue-100);
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &__collapse {
+    display: none;
+  }
+}
