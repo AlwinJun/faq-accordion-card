@@ -7,15 +7,37 @@
   }
 
   &__question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    background-color: transparent;
+    & button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: transparent;
+      cursor: pointer;
+
+      &.show {
+        color: var(--blue-900);
+        font-weight: 700;
+      }
+
+      & img.show {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__collapse {
-    display: none;
+    width: 90%;
+    text-align: justify;
+
+    P {
+      height: 0;
+      transition: height 0.3s ease-in-out;
+      overflow: hidden;
+
+      &.show {
+        height: rem(80);
+      }
+    }
   }
 }
