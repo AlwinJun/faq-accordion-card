@@ -32,12 +32,8 @@
 
     P {
       height: 0;
-      transition: height 0.3s ease-in-out;
       overflow: hidden;
-
-      &.show {
-        height: rem(80);
-      }
+      transition: height 0.7s ease-in-out;
     }
   }
 }
