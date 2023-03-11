@@ -1,3 +1,4 @@
+@use '../abstracts/' as *;
 @use 'root' as *;
 
 body {
@@ -12,4 +13,7 @@ body {
     var(--gradient-top),
     var(--gradient-bottom)
   );
+  @include breakpoint(large) {
+    padding-top: 20px;
+  }
 }

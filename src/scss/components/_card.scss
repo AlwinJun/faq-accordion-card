@@ -11,9 +11,31 @@
   background-size: rem(240);
   background-position: center rem(-5);
   border-radius: rem(20);
+  @include breakpoint(large) {
+    display: flex;
+    align-items: center;
+    max-width: rem(1200);
+    padding-top: rem(20);
+    padding-right: rem(100);
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-position: rem(-210) rem(-55);
+    background-size: rem(650);
+  }
+
+  img[alt='box'] {
+    display: none;
+    @include breakpoint(large) {
+      position: absolute;
+      top: rem(205);
+      left: rem(-85);
+      z-index: 10;
+    }
+  }
 
   &-img {
     margin-bottom: rem(130);
+    @include breakpoint(large) {
+    }
 
     &__mobile img {
       position: absolute;
@@ -25,10 +47,22 @@
         top: rem(-105);
         width: rem(230);
       }
+      @include breakpoint(large) {
+        display: none;
+      }
     }
 
     &__desktop {
       display: none;
+      @include breakpoint(large) {
+        display: block;
+        transform: translateY(rem(60));
+        overflow: hidden;
+      }
+      img {
+        width: rem(500);
+        transform: translate(rem(-60));
+      }
     }
   }
 
@@ -38,6 +72,9 @@
 
     h1 {
       text-align: center;
+      @include breakpoint(large) {
+        text-align: left;
+      }
     }
   }
 }
